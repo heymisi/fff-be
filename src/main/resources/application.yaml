@@ -1,0 +1,30 @@
+#spring:
+  #h2:
+    #console:
+      #enabled: true
+      #path: /h2
+  #datasource:
+    #username: sa
+    #password:
+    #url: jdbc:h2:file:~/fitforfundb
+
+spring:
+  datasource:
+    url: jdbc:mysql://fitforfun-db.crv2he8g2idy.eu-central-1.rds.amazonaws.com:3306/fitforfun?useUnicode=yes&characterEncoding=utf8&serverTimezone=UTC
+    username: admin
+    password: fitforfun
+    platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: mysql
+
+paypal:
+  mode: sandbox
+  client-id: AfcYH5iaJWSU_jXHaMkX9OeajMfn_r4zK_3sgSzbfR3-4unwk0B7lsywARjtUVdD8V8awTo2aUjDJ9aB
+  client-secret: EE8yPOQAkkxAIOfzgofLuL-FQsVCVUs7DDDx5yUkfXrDpLtJhd609gqxK23glg9kqBuHOT4WuWBRGLT1
+  success-url: https://fitforfun.herokuapp.com/success-pay
+  cancel-url: https://fitforfun.herokuapp.com/error
+
+

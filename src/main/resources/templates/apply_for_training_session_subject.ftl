@@ -1,0 +1,1 @@
+Jelentkezés történt egy órájára
